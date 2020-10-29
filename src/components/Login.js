@@ -19,7 +19,7 @@ export default function Login() {
           emailRef.current.value,
           passwordRef.current.value
         );
-      history.push("/");
+      history.push("/dashboard");
     } catch (error) {
       alert(error);
     }
@@ -37,7 +37,7 @@ export default function Login() {
         <input type="email" name="email" ref={emailRef} required />
         <label>Password :</label>
         <input type="password" name="password" ref={passwordRef} required />
-        <button type="submit">Signup</button>
+        <button type="submit">Login</button>
       </form>
     </div>
   );
